@@ -15,10 +15,10 @@ public class Car {
     @Column(name = "series")
     private int series;
 
-    @OneToOne
-    @JoinColumn(name = "id")
-//    @MapsId
-    private User user;
+//    @OneToOne
+//    @JoinColumn(name = "id")
+////    @MapsId
+//    private User user;
 
     public Car() {
     }
@@ -52,13 +52,13 @@ public class Car {
         this.series = series;
     }
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
+//    public User getUser() {
+//        return user;
+//    }
+//
+//    public void setUser(User user) {
+//        this.user = user;
+//    }
 
     public String toString() {
         return String.format("(id = %d, model = %s, series = %d)", id, model, series);
